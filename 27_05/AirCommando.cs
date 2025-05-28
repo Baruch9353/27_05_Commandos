@@ -15,8 +15,7 @@ namespace _27_05
         }
         public override void  Attack()
         {
-            Console.WriteLine($"Air commando soldier codename {CodeName} is active");
+            Console.WriteLine($"Air commando soldier code name: {CodeName} is active");
         }
-    }
-    
+    }   
 }

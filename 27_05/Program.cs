@@ -10,23 +10,17 @@ namespace _27_05
     {
         static void Main(string[] args)
         {
-            AirCommando dan = new AirCommando("Daniel", "91");
-            //dan.Attack();
-
-            Commando bar = new Commando("Baruch", "01");
-            //bar.CodeName = "03";
-
-            SeaCommando dov = new SeaCommando("David", "99");
-
-            //Console.WriteLine(bar.SayName("colonel"));
-            //Weapon gan = new Weapon("gan", "rusha", 8);
-            //gan.Shoot();
-
-            Commando[] commandos = { bar, dan, dov};
-            foreach (Commando c in commandos)
-            {
-                c.Attack();
-            }
+            Game start = new Game();
+            start.Start();
         }
     }
 }
+
+
+
+
+
+
+
+
+

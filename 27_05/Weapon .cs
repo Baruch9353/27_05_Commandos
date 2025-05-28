@@ -32,5 +32,9 @@ namespace _27_05
                 return 0;
             }
         }
+        public override string ToString()
+        {
+            return  $"Name: {Name} Manufacturer: {Manufacturer} Number Of Balls: {NumberOfBalls}"  ;
+        }
     }
 }

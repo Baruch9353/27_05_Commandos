@@ -9,10 +9,10 @@ namespace _27_05
 {
     internal class Commando
     {
-        private string Name;
+        internal string Name;
         public string CodeName {get; set;}
         public string[] Tools = new string[] { "Hammer", "chisel", "rope", "bag", "water", "bottle" };
-        public string Status;
+        public string Status = "alive";
 
         public Commando(string name, string codeName)
         {        
@@ -42,21 +42,28 @@ namespace _27_05
         public void Walk()
         {
             Status = "soldier goes";
-            Console.WriteLine("The soldier goes");
+            Console.WriteLine($"The soldier {Name} goes");
         }
 
         //Prints to the console that the soldier is hiding(changes the status)
         public void Hide()
         {
             Status = "soldier is hiding";
-            Console.WriteLine("The soldier is hiding.");
+            Console.WriteLine($"The soldier {Name} hiding.");
         }
 
         //Prints to the console that a command with code name X is active.
         public virtual void Attack()
         {
             //Status = $"Commando codename {CodeName} is active";
-            Console.WriteLine($"Commando codename {CodeName} is active");
+            Console.WriteLine($"Commando name: {Name} is active");
+        }
+
+        public override string ToString()
+        {
+            return $"Name of soldier: {Name}  \n" +
+                   $"Code Name: {CodeName} \n" +
+                   $"Status: {Status}  \n";
         }
     }
     
