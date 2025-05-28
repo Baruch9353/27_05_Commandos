@@ -59,10 +59,8 @@ namespace _27_05
 
             // Enemy takes damage (life reduces)
             sinwar.TakesLife(30);
+            sinwar.TakesLife(70);
             Console.WriteLine(sinwar);
-
-            // Print commandos status after actions
-            commando.PrintsCommandoList();
         }
     }
 

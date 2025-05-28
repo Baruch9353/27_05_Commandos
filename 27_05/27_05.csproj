@@ -43,23 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AirCommando.cs" />
-    <Compile Include="AK47 .cs" />
-    <Compile Include="Commando.cs" />
-    <Compile Include="CommandoFactory.cs" />
-    <Compile Include="Enemy.cs" />
-    <Compile Include="EnemyFactory .cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="IBreakable.cs" />
-    <Compile Include="IShootable.cs" />
-    <Compile Include="Knife .cs" />
-    <Compile Include="M16.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Models\AirCommando.cs" />
+    <Compile Include="Weapons\AK47 .cs" />
+    <Compile Include="Models\Commando.cs" />
+    <Compile Include="Factoriese\CommandoFactory.cs" />
+    <Compile Include="Models\Enemy.cs" />
+    <Compile Include="Factoriese\EnemyFactory .cs" />
+    <Compile Include="main\Game.cs" />
+    <Compile Include="Interfaces\IBreakable.cs" />
+    <Compile Include="Interfaces\IShootable.cs" />
+    <Compile Include="Weapons\Knife .cs" />
+    <Compile Include="Weapons\M16.cs" />
+    <Compile Include="main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SeaCommando .cs" />
-    <Compile Include="Stone .cs" />
-    <Compile Include="Weapon .cs" />
-    <Compile Include="WeaponFactory.cs" />
+    <Compile Include="Models\SeaCommando .cs" />
+    <Compile Include="Weapons\Stone .cs" />
+    <Compile Include="Models\Weapon .cs" />
+    <Compile Include="Factoriese\WeaponFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
